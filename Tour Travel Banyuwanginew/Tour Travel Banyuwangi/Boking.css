@@ -1,0 +1,138 @@
+body {
+    font-family: 'Times New Roman', Times, serif; /* Mengatur jenis font untuk seluruh teks dalam body */
+    background-color: #f8f9fa; /* Mengatur warna latar belakang */
+    margin: 0; /* Menghapus margin default dari body */
+    padding: 0; /* Menghapus padding default dari body */
+}
+.header {
+    background-color: #164142; /* Mengatur warna latar belakang header */
+    color: #fff; /* Mengatur warna teks */
+    padding: 20px; /* Memberikan padding 20px di dalam header */
+    text-align: center; /* Menyusun teks dalam header menjadi rata tengah */
+    box-sizing: border-box; /* Menghitung padding dan border sebagai bagian dari lebar dan tinggi total elemen */
+    width: 100%; /* Lebar header mengambil lebar penuh parentnya */
+    position: relative; /* Mengatur posisi relative untuk elemen ini */
+}
+.header img.logo {
+    position: absolute; /* Mengatur posisi absolut untuk logo */
+    top: 27px; /* Jarak dari atas sebesar 27 piksel */
+    left: 27px; /* Jarak dari kiri sebesar 27 piksel */
+    width: 150px; /* Lebar logo sebesar 150 piksel */
+}
+nav a {
+    box-sizing: border-box; /* Menghitung padding dan border sebagai bagian dari lebar dan tinggi total elemen */
+    background: linear-gradient(rgba(84, 145, 141, 0.941), rgb(0, 0, 0)); /* Memberikan latar belakang gradasi linier */
+    padding: 10px 20px; /* Memberikan padding 10 piksel atas-bawah dan 20 piksel kiri-kanan */
+    text-decoration: none; /* Menghapus dekorasi teks */
+    color: #ffffff; /* Mengatur warna teks */
+}
+nav a:hover {
+    background: linear-gradient(rgba(50, 89, 79, 0.941), rgb(46, 233, 243)); /* Mengubah latar belakang gradasi linier saat hover */
+    color: #000000; /* Mengubah warna teks saat hover */
+}
+@keyframes colorChange {
+    0% {background: linear-gradient(rgba(77, 111, 103, 0.941), rgb(60, 144, 117))} /* Warna awal */
+    50% {background: linear-gradient(rgba(40, 67, 60, 0.941), rgb(105, 211, 177))} /* Warna di tengah */
+    100% {background: linear-gradient(rgba(0, 0, 0, 0.941), rgb(52, 136, 110))} /* Warna akhir */
+}
+.welcome {
+    background: linear-gradient(rgba(65, 160, 136, 0.941), rgb(9, 9, 9)); /* Memberikan latar belakang gradasi linier */
+    color: #fff; /* Mengatur warna teks */
+    padding: 3px; /* Memberikan padding 3px di dalam .welcome */
+    text-align: center; /* Menyusun teks dalam .welcome menjadi rata tengah */
+    font-size: larger; /* Mengatur ukuran font menjadi lebih besar */
+    margin-bottom: 20px; /* Memberikan margin bawah sebesar 20px */
+    box-sizing: border-box; /* Menghitung padding dan border sebagai bagian dari lebar dan tinggi total elemen */
+    animation: colorChange 1s infinite alternate; /* Menjalankan animasi colorChange selama 1 detik */
+}
+.konten {
+    padding: 20px; /* Memberikan padding 20px di dalam konten */
+    box-sizing: border-box; /* Menghitung padding dan border sebagai bagian dari lebar dan tinggi total elemen */
+}
+.article {
+    background-color: #fff; /* Mengatur warna latar belakang */
+    padding: 20px; /* Memberikan padding 20px di dalam .article */
+    border: 3px solid #1f8665; /* Memberikan border 3px solid dengan warna tertentu */
+    box-sizing: border-box; /* Menghitung padding dan border sebagai bagian dari lebar dan tinggi total elemen */
+    margin-bottom: 10px; /* Memberikan margin bawah sebesar 10px */
+    border-radius: 5px; /* Memberikan sudut lengkung pada border */
+}
+table {
+    width: 100%; /* Lebar table mengambil lebar penuh parentnya */
+    border-collapse: collapse; /* Menghapus jarak antar border cell */
+    font-size: larger; /* Mengatur ukuran font */
+    background-color: #164142; /* Mengatur warna latar belakang */
+    color: #fff; /* Mengatur warna teks */
+}
+td input {
+    width: 80%; /* Mengatur lebar input */
+    background: linear-gradient(rgba(77, 111, 103, 0.941), rgb(60, 144, 117)) /* Memberikan latar belakang gradasi linier */
+}
+td textarea {
+    width: 80%; /* Mengatur lebar textarea */
+    background: linear-gradient(rgba(77, 111, 103, 0.941), rgb(60, 144, 117)) /* Memberikan latar belakang gradasi linier */
+}
+table button {
+    width: 30%; /* Mengatur lebar button */
+    font-size: 20px; /* Mengatur ukuran font */
+    height: auto; /* Mengatur tinggi button secara otomatis */
+    background-color: #73ff00; /* Mengatur warna latar belakang button */
+}
+.footer {
+    display: flex; /* Mengatur tata letak elemen dalam flexbox */
+    justify-content: space-between; /* Menyelaraskan elemen dengan jarak di antara mereka */
+    background: linear-gradient(rgba(65, 160, 136, 0.941), rgb(9, 9, 9)); /* Memberikan efek gradien pada latar belakang footer */
+    color: white; /* Memberi warna teks putih pada footer */
+    padding: 20px; /* Memberi ruang di dalam elemen footer */
+    box-sizing: border-box; /* Mengatur perhitungan lebar dan tinggi elemen termasuk padding dan border */
+    flex-wrap: wrap; /* Memungkinkan flex items untuk membungkus ke baris baru jika perlu */
+    text-align: center; /* Mengatur teks dalam footer menjadi rata tengah */
+}
+
+.footerbox {
+    flex: 1; /* Membuat elemen anak fleksibel dalam ukuran */
+    margin: 10px; /* Memberi jarak dari sisi-sisi elemen */
+}
+
+.footerbox h2 {
+    margin-top: 0; /* Menghapus margin atas pada elemen h2 */
+    margin-bottom: 10px; /* Memberi margin bawah pada elemen h2 */
+    font-size: 18px; /* Mengatur ukuran font pada elemen h2 */
+}
+
+.footerbox p,
+.footerbox address {
+    font-size: 14px; /* Mengatur ukuran font pada elemen p dan address */
+    line-height: 1.6; /* Mengatur jarak antar baris pada elemen p dan address */
+}
+
+.footerbox a {
+    color: #f8f9fa; /* Memberi warna pada tautan dalam footer */
+    text-decoration: none; /* Menghapus dekorasi tautan dalam footer */
+    transition: color 0.3s; /* Memberi efek transisi warna pada tautan */
+}
+
+.footerbox a:hover {
+    color: #ddd; /* Memberi warna abu-abu pada tautan saat dihover */
+}
+
+.footer-bottom {
+    text-align: center; /* Mengatur teks menjadi rata tengah */
+    padding: 10px; /* Memberi ruang di dalam elemen */
+    background: #0e5f5b; /* Memberikan warna latar belakang */
+    color: white; /* Memberi warna teks putih */
+    font-size: 14px; /* Mengatur ukuran font */
+    border-top: 1px solid #188778; /* Memberi garis atas dengan warna gelap */
+}
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column; /* Mengubah arah tata letak elemen dari horizontal (baris) vertikal (kolom) */
+        align-items: center; /* Menyelaraskan elemen anak secara horizontal ke tengah */
+    }
+
+    .footerbox {
+        margin-bottom: 20px; /* Memberi margin bawah */
+        text-align: center; /* Menyusun teks menjadi rata tengah */
+    }
+}

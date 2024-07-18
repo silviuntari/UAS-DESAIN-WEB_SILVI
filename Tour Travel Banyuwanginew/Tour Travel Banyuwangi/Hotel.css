@@ -1,0 +1,279 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #164142;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
+.header img.logo {
+    position: absolute;
+    top: 27px;
+    left: 27px;
+    width: 150px;
+}
+nav a {
+    box-sizing: border-box;
+    background: linear-gradient(rgba(84, 145, 141, 0.941), rgb(0, 0, 0));
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 1s;
+}
+nav a :hover {
+    background: linear-gradient(rgba(57, 108, 95, 0.941), rgb(3, 244, 168));
+    color: #000000;
+}
+strong {
+    color: #188778;
+}
+.teguhsilvi {
+    display: flex;
+    flex-wrap: wrap;
+}
+.travel {
+    width: 25%;
+    background: linear-gradient(rgba(84, 145, 141, 0.941), rgb(0, 0, 0));
+    padding: 20px;
+    box-sizing: border-box;
+}
+.travel nav {
+    list-style-type: none;
+    padding: 0;
+}
+.travel a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: linear-gradient(rgba(8, 58, 55, 0.941), rgb(130, 228, 216));
+    transition: 1s;
+}
+.travel a:hover {
+    background: linear-gradient(rgba(65, 160, 136, 0.941), rgb(9, 9, 9));
+    color: #fff;
+}
+.travel a img {
+    width: 70px;
+    height: 50px;
+}
+.konten {
+    width: 75%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.travel img {
+    width: 100%;
+    height: auto;
+}
+.kotak {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+.bok {
+    flex: 1;
+    padding: 15px;
+    text-align: justify;
+}
+.box {
+    position: relative; /* Menambahkan posisi relatif */
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    margin: 20px;
+    background-color: #164142;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.box img {
+    width: 100%; /* Menyesuaikan lebar gambar dengan lebar kotak */
+    height: auto;
+}
+.box .boking a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(8, 58, 55, 0.941), rgb(130, 228, 216));
+    color: white;
+    font-size: 16px;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none; /* Agar tombol terlihat seperti tombol */
+    transition: 1s;
+}
+.box .boking a:hover {
+    background: linear-gradient(rgba(65, 160, 136, 0.941), rgb(9, 9, 9));
+    color: #fff;
+}
+.box .title {
+    position: absolute;
+    bottom: 0; /* Menempatkan judul di bagian bawah gambar */
+    left: 0;
+    width: 100%; /* Membuat lebar judul sama dengan lebar gambar */
+    color: white;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Latar belakang semi-transparan */
+    padding: 10px 0; /* Padding atas dan bawah untuk spasi */
+    text-align: center;
+    box-sizing: border-box;
+}
+.article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    text-align: center;
+}
+@keyframes colorChange {
+    0% {background: linear-gradient(rgba(77, 111, 103, 0.941), rgb(60, 144, 117))}
+    50% {background: linear-gradient(rgba(40, 67, 60, 0.941), rgb(105, 211, 177))}
+    100% {background: linear-gradient(rgba(0, 0, 0, 0.941), rgb(52, 136, 110))}
+}
+.helo {
+    background-color: rgb(19, 184, 255);
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    animation: colorChange 1s infinite alternate;
+}
+.article {
+    background-color: #fff;
+    padding: 5px;
+    border: 3px solid #1f8665;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.travel .menu-icon {
+    display: block;
+    color: #000000;
+    font-size: 50px;
+    text-align: left;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 750px) {
+    .header img.logo {
+        width: 15%;
+        height: auto;
+    }
+    .travel {
+        width: 30%;
+        padding: 0px;
+        text-align: center;
+    }
+    .travel nav {
+        display: none;
+    }
+    .travel .menu-icon {
+        display: block;
+        color: #000000;
+        font-size: 50px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .travel nav.show {
+        display: block;
+        list-style: none;
+        text-align: center;
+    }
+    .travel nav.show a {
+        display: block;
+        margin: 15px;
+    }
+    .travel nav.show a {
+        padding: 10px;
+    }
+    .konten {
+        width: 70%;
+        padding: 10px;
+    }
+    .article {
+        padding: 30px;
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(rgba(65, 160, 136, 0.941), rgb(9, 9, 9));
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footerbox {
+    flex: 1;
+    margin: 10px;
+}
+
+.footerbox h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footerbox p,
+.footerbox address {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footerbox a {
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footerbox a:hover {
+    color: #ddd;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #0e5f5b;
+    color: white;
+    font-size: 14px;
+    border-top: 1px solid #188778;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerbox {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,229 @@
+body {
+    font-family: 'Times New Roman', Times, serif; /* Mengatur jenis font untuk seluruh teks dalam body */
+    background-color: #f8f9fa; /* Mengatur warna latar belakang */
+    margin: 0; /* Menghapus margin default dari body */
+    padding: 0; /* Menghapus padding default dari body */
+}
+.header {
+    background-color: #164142; /* Mengatur warna latar belakang header */
+    color: #fff; /* Mengatur warna teks */
+    padding: 20px; /* Memberikan padding 20px di dalam header */
+    text-align: center; /* Menyusun teks dalam header menjadi rata tengah */
+    box-sizing: border-box; /* Menghitung padding dan border sebagai bagian dari lebar dan tinggi total elemen */
+    width: 100%; /* Lebar header mengambil lebar penuh parentnya */
+    position: relative; /* Mengatur posisi relative untuk elemen ini */
+}
+.header img.logo {
+    position: absolute; /* Mengatur posisi absolut untuk logo */
+    top: 27px; /* Jarak dari atas sebesar 27 piksel */
+    left: 27px; /* Jarak dari kiri sebesar 27 piksel */
+    width: 150px; /* Lebar logo sebesar 150 piksel */
+}
+nav a {
+    box-sizing: border-box; /* Menghitung padding dan border sebagai bagian dari lebar dan tinggi total elemen */
+    background: linear-gradient(rgba(84, 145, 141, 0.941), rgb(0, 0, 0)); /* Memberikan latar belakang gradasi linier */
+    padding: 10px 20px; /* Memberikan padding 10 piksel atas-bawah dan 20 piksel kiri-kanan */
+    text-decoration: none; /* Menghapus dekorasi teks */
+    color: #ffffff; /* Mengatur warna teks */
+    transition: 1s; /* Efek transisi selama 1 detik saat perubahan properti */
+}
+nav a:hover {
+    background: linear-gradient(rgba(57, 108, 95, 0.941), rgb(3, 244, 168)); /* Mengubah latar belakang gradasi linier saat hover */
+    color: #000000; /* Mengubah warna teks saat hover */
+}
+.teguhsilvi {
+    display: flex; /* Mengatur tata letak menjadi flexbox */
+    flex-wrap: wrap; /* Memungkinkan item untuk melingkupi ke baris berikutnya */
+}
+.travel {
+    width: 25%; /* Mengatur lebar elemen travel */
+    background: linear-gradient(rgba(84, 145, 141, 0.941), rgb(0, 0, 0)); /* Memberikan latar belakang gradasi linier */
+    padding: 20px; /* Memberikan padding 20px di dalam elemen travel */
+    box-sizing: border-box; /* Menghitung padding dan border sebagai bagian dari lebar dan tinggi total elemen */
+}
+.travel nav {
+    list-style-type: none; /* Menghapus tanda daftar */
+    padding: 0; /* Menghapus padding default */
+}
+.travel a {
+    color: #000000; /* Mengatur warna teks */
+    text-decoration: none; /* Menghapus dekorasi teks */
+    display: block; /* Menjadikan tautan menjadi blok */
+    font-size: 25px; /* Mengatur ukuran font */
+    padding: 10px; /* Memberikan padding 10px di dalam tautan */
+    margin-bottom: 10px; /* Memberikan margin bawah sebesar 10px */
+    border-radius: 5px; /* Memberikan sudut lengkung pada border */
+    background: linear-gradient(rgba(8, 58, 55, 0.941), rgb(130, 228, 216)); /* Memberikan latar belakang gradasi linier */
+    transition: 1s; /* Efek transisi selama 1 detik saat perubahan properti */
+}
+.travel a:hover {
+    background: linear-gradient(rgba(65, 160, 136, 0.941), rgb(9, 9, 9)); /* Mengubah latar belakang gradasi linier saat hover */
+    color: #fff; /* Mengubah warna teks saat hover */
+}
+.travel a img {
+    width: 70px; /* Mengatur lebar gambar */
+    height: 50px; /* Mengatur tinggi gambar */
+}
+.konten {
+    width: 75%; /* Mengatur lebar konten */
+    padding: 20px; /* Memberikan padding 20px di dalam konten */
+    box-sizing: border-box; /* Menghitung padding dan border sebagai bagian dari lebar dan tinggi total elemen */
+}
+.box {
+    flex: 1; /* Memberikan flex-grow 1, sehingga dapat memanfaatkan ruang kosong */
+    padding: 15px; /* Memberikan padding 15px di dalam box */
+}
+.bungkus {
+    display: flex; /* Mengatur tata letak menjadi flexbox */
+    justify-content: space-between; /* Memposisikan item dengan jarak sekitar */
+    align-items: center; /* Memposisikan item secara vertikal ke tengah */
+    text-align: left; /* Menyusun teks menjadi rata kiri */
+}
+img {
+    width: 100%; /* Mengatur lebar gambar menjadi 100% dari lebar parentnya */
+    height: auto; /* Memastikan tinggi gambar disesuaikan secara otomatis */
+}
+h1 {
+    text-align: center; /* Menyusun teks dalam h1 menjadi rata tengah */
+}
+@keyframes colorChange {
+    0% {background: linear-gradient(rgba(77, 111, 103, 0.941), rgb(60, 144, 117))}
+    50% {background: linear-gradient(rgba(40, 67, 60, 0.941), rgb(105, 211, 177))}
+    100% {background: linear-gradient(rgba(0, 0, 0, 0.941), rgb(52, 136, 110))}
+}
+.helo {
+    background-color: rgb(19, 184, 255); /* Mengatur warna latar belakang */
+    color: #fff; /* Mengatur warna teks */
+    padding: 5px; /* Memberikan padding 5px di dalam .helo */
+    text-align: center; /* Menyusun teks dalam .helo menjadi rata tengah */
+    margin-bottom: 10px; /* Memberikan margin bawah sebesar 10px */
+    box-sizing: border-box; /* Menghitung padding dan border sebagai bagian dari lebar dan tinggi total elemen */
+    animation: colorChange 1s infinite alternate; /* Menjalankan animasi colorChange selama 1 detik */
+}
+.article {
+    background-color: #fff; /* Mengatur warna latar belakang */
+    padding: 5px; /* Memberikan padding 5px di dalam .article */
+    border: 3px solid #1f8665; /* Memberikan border 3px solid dengan warna tertentu */
+    box-sizing: border-box; /* Menghitung padding dan border sebagai bagian dari lebar dan tinggi total elemen */
+    margin-bottom: 10px; /* Memberikan margin bawah sebesar 10px */
+    border-radius: 5px; /* Memberikan sudut lengkung pada border */
+}
+.travel .menu-icon {
+    display: block; /* Menampilkan elemen sebagai blok */
+    color: #000000; /* Memberi warna teks */
+    font-size: 30px; /* Mengatur ukuran font */
+    text-align: left; /* Menyusun teks menjadi rata kiri */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat di atas menu ikon */
+    text-align: center; /* Menyusun teks menjadi rata tengah */
+    padding: 20px; /* Memberikan padding 20px di dalam menu ikon */
+}
+@media (max-width: 750px) {
+    .header img.logo {
+        width: 15%; /* Mengatur lebar logo menjadi 15% dari lebar parentnya */
+        height: auto; /* Memastikan tinggi logo disesuaikan secara otomatis */
+    }
+    .travel {
+        width: 30%; /* Mengatur lebar elemen travel */
+        padding: 0px; /* Menghapus padding */
+        text-align: center; /* Menyusun teks menjadi rata tengah */
+    }
+    .travel nav {
+        display: none; /* Menyembunyikan elemen nav */
+    }
+    .travel .menu-icon {
+        display: block; /* Menampilkan elemen sebagai blok */
+        color: #000000; /* Mengatur warna teks */
+        font-size: 50px; /* Mengatur ukuran font */
+        text-align: center; /* Menyusun teks menjadi rata tengah */
+        cursor: pointer; /* Mengubah kursor menjadi pointer */
+    }
+    .travel nav.show {
+        display: block; /* Menampilkan elemen nav */
+        list-style: none; /* Menghapus tanda daftar */
+        text-align: center; /* Menyusun teks menjadi rata tengah */
+    }
+    .travel nav.show a {
+        display: block; /* Menampilkan tautan sebagai blok */
+        margin: 15px; /* Memberikan margin sebesar 15px */
+    }
+    .travel nav.show a {
+        padding: 10px; /* Memberikan padding 10px */
+    }
+    .konten {
+        width: 70%; /* Mengatur lebar konten */
+        padding: 10px; /* Memberikan padding 10px */
+    }
+    .bungkus {
+        flex-direction: column; /* Mengatur arah tata letak menjadi kolom */
+        align-items: flex-start; /* Menyelaraskan item ke awal (kiri) */
+    }
+    .box {
+        width: 100%; /* Mengatur lebar box menjadi 100% */
+        padding: 10px; /* Memberikan padding 10px */
+    }
+    .article {
+        padding: 30px; /* Memberikan padding 30px */
+        font-size: 15px; /* Mengatur ukuran font */
+    }
+    h1 {
+        font-size: 24px; /* Mengatur ukuran font */
+    }
+}
+.footer {
+    display: flex; /* mengatur tata letak elemen dalam flexbox */
+    justify-content: space-between; /* menyelaraskan elemen dengan jarak di antara mereka */
+    background: linear-gradient(rgba(65, 160, 136, 0.941), rgb(9, 9, 9)); /* memberikan efek gradien pada latar belakang footer */
+    color: white; /* memberi warna teks putih pada footer */
+    padding: 20px; /* memberi ruang di dalam elemen footer */
+    box-sizing: border-box; /* mengatur perhitungan lebar dan tinggi elemen termasuk padding dan border */
+    flex-wrap: wrap; /* memungkinkan flex items untuk membungkus ke baris baru jika perlu */
+    text-align: center; /* mengatur teks dalam footer menjadi rata tengah */
+}
+
+.footerbox {
+    flex: 1; /* membuat elemen anak fleksibel dalam ukuran */
+    margin: 10px; /* memberi jarak dari sisi-sisi elemen */
+}
+
+.footerbox h2 {
+    margin-top: 0; /* menghapus margin atas pada elemen h2 */
+    margin-bottom: 10px; /* memberi margin bawah pada elemen h2 */
+    font-size: 18px; /* mengatur ukuran font pada elemen h2 */
+}
+
+.footerbox p,
+.footerbox address {
+    font-size: 14px; /* mengatur ukuran font pada elemen p dan address */
+    line-height: 1.6; /* mengatur jarak antar baris pada elemen p dan address */
+}
+
+.footerbox a {
+    color: #f8f9fa; /* memberi warna pada tautan dalam footer */
+    text-decoration: none; /* menghapus dekorasi tautan dalam footer */
+    transition: color 0.3s; /* memberi efek transisi warna pada tautan */
+}
+
+.footerbox a:hover {
+    color: #ddd; /* memberi warna abu-abu pada tautan saat dihover */
+}
+
+.footer-bottom {
+    text-align: center; /* mengatur teks menjadi rata tengah */
+    padding: 10px; /* memberi ruang di dalam elemen */
+    background: #0e5f5b; /* memberikan warna latar belakang */
+    color: white; /* memberi warna teks putih */
+    font-size: 14px; /* mengatur ukuran font */
+    border-top: 1px solid #188778; /* memberi garis atas dengan warna gelap */
+}
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column; /* mengubah arah tata letak elemen dari horizontal (baris) vertika(kolom) */
+        align-items: center; /*menyelaraskan elemen" anak secara herizontal ke tengah*/
+    }
+
+    .footerbox { /*agar memiliki margin bawah dan teks di selaraskan ke tengah*/
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

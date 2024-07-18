@@ -1,0 +1,134 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #164142;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative; /*mengatur elemen header menjadi relatif terhadap elemen*/
+}
+.header img.logo {
+    position: absolute;
+    top: 27px;
+    left: 27px;
+    width: 150px;
+}
+nav a {
+    box-sizing: border-box;
+    background: linear-gradient(rgba(84, 145, 141, 0.941), rgb(0, 0, 0));
+    padding: 10px 20px;
+    text-decoration: none; /*menghilang dekorasi teks (garis bawah)*/
+    color: #ffffff;
+}
+nav a:hover {
+    background: linear-gradient(rgba(50, 89, 79, 0.941), rgb(46, 233, 243));
+    color: #000000;
+}
+@keyframes colorChange {
+    0% {background: linear-gradient(rgba(77, 111, 103, 0.941), rgb(60, 144, 117))}
+    50% {background: linear-gradient(rgba(40, 67, 60, 0.941), rgb(105, 211, 177))}
+    100% {background: linear-gradient(rgba(0, 0, 0, 0.941), rgb(52, 136, 110))}
+}
+.welcome {
+    background: linear-gradient(rgba(65, 160, 136, 0.941), rgb(9, 9, 9));
+    color: #fff;
+    padding: 3px; /*menambah ruang dalam elemen*/
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    animation: colorChange 1s infinite alternate;
+}
+.konten {
+    padding: 20px;
+    box-sizing: border-box;
+}
+.article {
+    background-color: #fff;
+    padding: 20px;
+    border: 3px solid #1f8665; /*umengatur ketebalan garis*/
+    box-sizing: border-box;
+    margin-bottom: 10px; /*menambahkan ruang di bawah elemen/ jarak*/
+    border-radius: 5px; /*membuat sudut elemen menjadi lengkung*/
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+.image-item {
+    text-align: center;
+}
+.image-grid img {
+    width: 100%;
+    height: auto; /*mengatur tinggi gmbr scara otomatis sesuai dgn porsi*/
+    object-fit: cover; /*memastikan gambar menutupi elemen tanpa mengubah rasio aspek*/
+    border-radius: 5px;
+}
+.image-item p {
+    margin-top: 10px;
+}
+.footer {
+    display: flex; /*mengatur tata letak elemen anak*/
+    justify-content: space-between; /*mengatur ruang di antara elemen anak agar tersebar merata*/
+    background: linear-gradient(rgba(65, 160, 136, 0.941), rgb(9, 9, 9));
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap; /*memungkinkan elemen anak untuk membungkus ke baris berikutnya jika di perlukan*/
+    text-align: center;
+}
+
+.footerbox {
+    flex: 1; /*mengatur elemen anak agar tumbuh untuk mengisi ruang yang tersedia*/
+    margin: 10px;
+}
+
+.footerbox h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footerbox p,
+.footerbox address {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footerbox a {
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footerbox a:hover {
+    color: #ddd;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #0e5f5b;
+    color: white;
+    font-size: 14px;
+    border-top: 1px solid #188778;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerbox {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
